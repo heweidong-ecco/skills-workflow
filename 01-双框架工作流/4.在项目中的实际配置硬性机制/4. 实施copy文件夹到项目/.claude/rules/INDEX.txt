@@ -1,0 +1,9 @@
+本目录下的规则文件：
+
+- skills-routing.md  技能分工规则（需求、TDD、调试、执行骨架）
+- workflow.md        六层工作流（第 0 层到第 6 层）
+- testing-gate.md    测试检查阶段（按测试文件路径加载）
+- refactoring.md     重构路径（Bug 路径 vs 架构重构路径）
+- conflict-resolution.md  冲突处理（优先级声明）
+
+注意：只有 .md 文件会被自动加载，INDEX.txt 仅用于人类导航。

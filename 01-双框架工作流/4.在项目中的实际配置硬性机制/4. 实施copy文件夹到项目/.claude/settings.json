@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/skill-guard.sh"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '分工规则：需求走 grill-me，TDD 走 tdd，调试复杂走 diagnosing-bugs，执行走 Superpowers 骨架。禁止调用 brainstorming 和 test-driven-development。'"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "deny": [
+      "Edit(.scratch/**/prd.md)",
+      "Write(.scratch/**/prd.md)"
+    ]
+  }
+}
